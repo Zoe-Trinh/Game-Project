@@ -1,19 +1,30 @@
 body {
     background-color:#010626;
     color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(back2.jpg);
+    background-position-y: -450px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1 {
-    color: aquamarine;
+    color: rgb(46, 255, 185);
     font-size: 80px;
+    text-align: center;
+    text-shadow: 0 0 10px #9223FF, 0 0 20px #9223FF, 0 0 30px #9223FF;
 }
 #main {
     margin-left: 200px;
     padding: 20px;
+    color: rgb(30, 251, 199);
+    font-size: 20px;
+    background-color: #010626d6;
 }
 #Sidenav ul {
     list-style-type: none;
     text-align: center;
-    padding: 0;
+    padding: 5px;
     width: 150px;
     background-color:#311f5ed2;
     position: fixed;
@@ -21,22 +32,24 @@ h1 {
 }
 
 #Sidenav li a {
-    display: flex;
-    flex-direction: column;
+    display: block;
     color: aquamarine;
     padding: 20px;
     text-decoration: none;
-
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
 }
 #Sidenav li a:hover {
-    background-color: #9223FF;
+    background-color: #9730fd;
     color: rgb(166, 255, 0);
-}
-#Sidenav a{
-    font-size: 20px;
+    text-shadow: 0 0 10px rgb(166, 255, 0);
 }
 .videoButton {
     border-radius: 20px;
+    background-color: #000;
+}
+#introVideo {
+    background-color: #000;
 }
 
 footer {
@@ -48,15 +61,68 @@ footer .p .ul{
     color: #000;
 }
 .textbox {
-    border-style: solid;
-    border-color: aquamarine;
-    background-color: #c7ffed67;
+    border: 2px solid rgb(255, 0, 162);
+    background-color: #c7ffed2a;
+    padding: 20px;
+    box-shadow: 0 0 15px #9223FF;
+    margin-top: 50px;
+}
+.changeworld img {
+    float: left;
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s, filter 0.3s;
 }
 
-.changeworld img{
-    width: 500px;
+.changeworld img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
-.changeworld
+#characterSlideshow {
+    max-width: 1060px;
+    display: block;
+    float: left;
+    float: left;
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s, filter 0.3s;
+}
+.slidesContent{
+    width: 400px;
+    display: none;
+    margin-left: 50px;
+}
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    margin-top: 30px;
+    position: relative;
+  }
+.next {
+    float: right;
+  }
+.prev {
+    float: left;
+  }
+  .prev:hover, .next:hover {
+    background-color:rgba(0, 255, 255, 0.705);
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 #changeIm {
     width: 300px;
     height: 50px;
@@ -72,5 +138,40 @@ footer .p .ul{
 #changeIm:hover {
     background-color: #9223FF;
     color: aquamarine;
+}
+footer {
+    background-color: #c7ffed93;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px #9223FF;
+    color: #000;
+}
 
+footer ul {
+    color: #000;
+    text-shadow: #000;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    #Sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #Sidenav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #main {
+        margin-left: 0;
+    }
 }

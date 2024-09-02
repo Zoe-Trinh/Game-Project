@@ -12,37 +12,23 @@
         <ul>
             <li><a href="gameweb.html">Homepage>></a></li>
             <li><a href="#introduction">Game introduction</a></li>
-            <li><a href="map">Explore the city!</a></li>
+            <li><a href="#map">Explore the city!</a></li>
             <li><a href="monster">Enemies</a></li>
         <!--game content-->
         </ul>
     </div>
   <section id="main">
-    <div class="textbox">
-      ejrnvernvere
+    <div id="introduction">
+        <p>&emsp; In a dystopian future, Melbourne is trapped in a decaying virtual reality known as the "Dark Grid". The city’s University of Melbourne campus, once a beacon of knowledge, now lies in ruins, where the boundaries between the physical and digital worlds have blurred. The boundaries between the physical world and the Dark Grid—a twisted virtual reality—have blurred, creating a chaotic realm where nothing is as it seems. A digital virus, unleashed by the Sovereign, threatens to erase all existence. But hidden deep within the heart of chaos, Melbourne city, is the key to survival: the Source Code, an enigmatic piece of software capable of rebooting the system and restoring the balance between the two worlds.
+          Time is running out, and the risks couldn’t be higher. As players navigate around the underground levels of Melbourne’s hectic infrastructure, they must confront the terrifying reality that each decision, each step, could be their last.
+          </p>
     </div>
     <br>
-    <div class="changeworld">
-      <img src="lib.PNG" id="myImg" alt="state library real world">
-        <script>
-          function changeImage(){
-          document.getElementById("myImg").src="visionlib.PNG";
-          }
-            if(document.getElementById("myImg").src=="visionlib.PNG"
-        ){
-          document.getElementById("myImg").src="lib.PNG";
-          }
-          </script>
-          <button id="changeIm" onclick="changeImage()">
-            Cyberoptics vision</button>
-    </div>
-
-
     <div id="Video">
       <div class="introvideonbutton">
           <button id="videoButton" onclick="pauseVideo()">
           <video autoplay loop id="introVideo" width="1000" height="570">
-              <source src=""> type="video/mp4"><!--insert video file-->
+              <source src="Cyberjunkies.mp4"> type="video/mp4"><!--insert video file-->
           </video>
           </button>
         <script>
@@ -57,30 +43,92 @@
           }
           </script>
       </div>
-      <img src="tram.png" alt="melbourne tram" width="30%">
-      <img src="arcade.png" alt="arcade"width="30%">
+
       <img src="char1.png" alt="character 1" width="40%">
-  </div>
-  <div id="introduction">
-      <h2>why buying</h2>
-      <p>Are you tired of your mom telling you to go outside and not just sit around at home?</p>
-        <p>Welcome to a game that turns that nagging into an adventure! In this game, your real-world 
-          movements blend with virtual challenges as you race against time to find the cure and conquer 
-          your campus. Step outside, explore, and let the thrill of the chase transform your surroundings
-           into an epic battleground.</p>
-  </div>
-  <div id="introduction">
-    <p>In a dystopian future, Melbourne is trapped in a decaying virtual reality known as the "Dark Grid". The city’s University of Melbourne campus, once a beacon of knowledge, now lies in ruins, where the boundaries between the physical and digital worlds have blurred. The boundaries between the physical world and the Dark Grid—a twisted virtual reality—have blurred, creating a chaotic realm where nothing is as it seems. A digital virus, unleashed by the Sovereign, threatens to erase all existence. But hidden deep within the heart of chaos, Melbourne city, is the key to survival: the Source Code, an enigmatic piece of software capable of rebooting the system and restoring the balance between the two worlds.
-      Time is running out, and the risks couldn’t be higher. As players navigate around the underground levels of Melbourne’s hectic infrastructure, they must confront the terrifying reality that each decision, each step, could be their last.
-      </p>
-  </div>
+      <img src="char2.PNG" alt="character 2" width="40%">
+    <div class="textbox">
+          <h2>Reality-Virtual Interaction:</h2>
+            <p>&emsp;
+            Melbourne is simultaneously caught between the crumbling physical world and the malevolent Dark Grid. Players must switch between these realms, where actions in one world have immediate, often significant consequences in the other. Solving mind-bending puzzles in the Dark Grid might unlock hidden passages in the real world, while manipulating objects in reality could reveal crucial, life-saving data within the virtual chaos.
+            </p>
+    </div>
+    <div class="textbox">
+            <h2>Defeat enemies to unlock areas</h2>
+            <div id="characterSlideshow">
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+              <div class="slidesContent">
+                <img src="IMG_4667.PNG" alt="melbourne tram" width="100%">
+              </div>
+              <div class="slidesContent">
+                <img src="arcade.png" alt="arcade"width="100%">
+              </div>
+              <div class="slidesContent">
+                <img src="libout.PNG" alt="libout" width="100%">
+              </div>
+              <div class="slidesContent">
+                <img src="lib.PNG" alt="lib" width="100%">
+              </div>
+                <script>
+                  let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+          showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+          showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slidesContent");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          }
+              </script>
+          </div>
+          <p>&emsp;
+            Melbourne’s campus is a battleground, divided into sectors controlled by AI factions corrupted by the Sovereign’s virus. To survive, players must hack into these network and gain control of the sectors from the AI’s iron grip. Each reclaimed territory provides vital resources—data shards, enhanced abilities, and access to the deepest layers of the Dark Grid—all essential for locating the Source Code before it’s too late.
+            </p>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+    </div>
+    </div>
+
+    <div class="textbox">
+          <h2>Puzzle Solving and Survival:</h2>
+          <div class="changeworld">
+            <img src="lib.PNG" id="myImg" alt="state library real world">
+              <script>
+                function changeImage(){
+                document.getElementById("myImg").src="visionlib.PNG";
+                }
+                  if(document.getElementById("myImg").src=="visionlib.PNG"
+              ){
+                document.getElementById("myImg").src="lib.PNG";
+                }
+                </script>
+                <button id="changeIm" onclick="changeImage()">
+                  Cyberoptics vision</button>
+          </div>
+          <p>&emsp;The Source Code is encrypted within the campus, its location fragmented across data shards scattered throughout the Dark Grid. Players must decode these shards by solving intricate puzzles while avoiding digital anomalies that can corrupt their progress. Success stabilizes parts of the world, making them accessible, while failure accelerates the digital decay, locking down areas.
+            </p>
+    </div>
   </section>
   <footer>
-    <p>Group members</p>
+    <p>Made by</p>
     <ul>
-      <li>A</li>
-      <li>B</li>
-      <li>C</li>
+      <li>Nam Anh TRINH (Zoe) 1524281</li>
+      <li>Weichan WANG 1584202</li>
+      <li>Shenghao XU 1597472</li>
     </ul>
   </footer>
     
