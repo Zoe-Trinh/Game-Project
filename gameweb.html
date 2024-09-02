@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="gameweb.css">
 </head>
 <body>
-    <h1>Neon Melbourne: Underworld Pulse</h1>
+    <h1>Melbourne Mirage: <br>Reality Clash</h1>
     <div id="Sidenav">
         <ul>
             <li><a href="gameweb.html">Homepage>></a></li>
             <li><a href="#introduction">Game introduction</a></li>
             <li><a href="#map">Explore the city!</a></li>
-            <li><a href="monster">Enemies</a></li>
+            <li><a href="#enemies">Enemies</a></li>
         <!--game content-->
         </ul>
     </div>
   <section id="main">
     <div id="introduction">
+      <img src="char1.png" class="img2" alt="character 1" width="40%">
         <p>&emsp; In a dystopian future, Melbourne is trapped in a decaying virtual reality known as the "Dark Grid". The city’s University of Melbourne campus, once a beacon of knowledge, now lies in ruins, where the boundaries between the physical and digital worlds have blurred. The boundaries between the physical world and the Dark Grid—a twisted virtual reality—have blurred, creating a chaotic realm where nothing is as it seems. A digital virus, unleashed by the Sovereign, threatens to erase all existence. But hidden deep within the heart of chaos, Melbourne city, is the key to survival: the Source Code, an enigmatic piece of software capable of rebooting the system and restoring the balance between the two worlds.
           Time is running out, and the risks couldn’t be higher. As players navigate around the underground levels of Melbourne’s hectic infrastructure, they must confront the terrifying reality that each decision, each step, could be their last.
           </p>
@@ -43,16 +44,14 @@
           }
           </script>
       </div>
-
-      <img src="char1.png" alt="character 1" width="40%">
-      <img src="char2.PNG" alt="character 2" width="40%">
     <div class="textbox">
           <h2>Reality-Virtual Interaction:</h2>
+          <img src="char2.PNG" class="img2" alt="character 2" width="40%">
             <p>&emsp;
             Melbourne is simultaneously caught between the crumbling physical world and the malevolent Dark Grid. Players must switch between these realms, where actions in one world have immediate, often significant consequences in the other. Solving mind-bending puzzles in the Dark Grid might unlock hidden passages in the real world, while manipulating objects in reality could reveal crucial, life-saving data within the virtual chaos.
-            </p>
+            </p> <br> <br><br><br>
     </div>
-    <div class="textbox">
+    <div class="textbox" id="map">
             <h2>Defeat enemies to unlock areas</h2>
             <div id="characterSlideshow">
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -102,7 +101,6 @@
             
     </div>
     </div>
-
     <div class="textbox">
           <h2>Puzzle Solving and Survival:</h2>
           <div class="changeworld">
@@ -122,14 +120,35 @@
           <p>&emsp;The Source Code is encrypted within the campus, its location fragmented across data shards scattered throughout the Dark Grid. Players must decode these shards by solving intricate puzzles while avoiding digital anomalies that can corrupt their progress. Success stabilizes parts of the world, making them accessible, while failure accelerates the digital decay, locking down areas.
             </p>
     </div>
+    <div id="enemies" class="textbox">
+      <h2>Enemies</h2>
+      <img src="ech.png" class="img2" alt=" tram boss" width="50%">
+      <img src="55e208ab5c492a3cd1e6bf80eede4fa.webp" alt="" width="40%" style="padding-top: 30px;">
+      <p>Tram Monster is a cyberpunk boss battle featuring a monstrous, sentient tram that terrorizes a dystopian city. The fight unfolds in two intense stages:
+          <br> <b>Stage 1</b><br>
+        - There will be a lot of tram tracks on the map, and the boss can run on the ground tracks and crash to people, and you have to dodge.
+        Another variation of the trick is to lift up the track, then fly up, and then slam it down and smash people.
+        Then if the protagonist wants to attack, the tram may stop in the middle of the map, (like Overload) and the protagonist can take the opportunity to attack on its two sides. The tram also has a trick, which is that when it was attacked, it may fall to the left or right sides to hit the protagonist.
+      </p>
+      <img src="weap.PNG" class="img2" alt="weapon" width="60%">
+      <p><br><b>Stage 2</b><br>
+        - When it reaches about 50%, or 30%hp, it enters the second stage, and a lot of big black claws stretch out from the windows or doors of the tram, like spiders. In this stage, a new long-range attack will be added, which is equivalent to the passengers inside throwing garbage out crazily to attack the protagonist.
+        In the second stage, where it can interact with the buildings in the scene, allowing tram to climb up the building. At this time, the protagonist cannot hit him, and it becomes a complete dodging barrage game, with the tram throwing garbage and various large rocks, and the protagonist can only dodge around. (Waiting the tram go down)
+        In the end, you can also kill him according to the whole plot, and then he will take the building materials from the building, and then he will hollow out the building, and then the building will fall down and crush the boss to death,
+        or you can kill him by yourself, and use some long-range weapon such as Bow
+        <br>
+        The fight is a chaotic blend of high-speed evasion, tactical offense, and survival against an urban nightmare.</p>
+    </div>
   </section>
   <footer>
+    <b>
     <p>Made by</p>
     <ul>
-      <li>Nam Anh TRINH (Zoe) 1524281</li>
-      <li>Weichan WANG 1584202</li>
-      <li>Shenghao XU 1597472</li>
+      <li>Nam Anh TRINH (Zoe) 1524281 (designs, drawings, website, the rest)</li>
+      <li>Weichan WANG 1584202 (game mechanics)</li>
+      <li>Shenghao XU 1597472 (enemies)</li>
     </ul>
+  </b>
   </footer>
     
 </body>
