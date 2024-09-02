@@ -178,5 +178,12 @@ footer ul li {
     }
     #main {
         margin-left: 0;
+
+    }
+    body {
+        margin-left: 0;
+    }
+    #introVideo {
+        width: 100%;
     }
 }
