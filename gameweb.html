@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="gameweb.css">
 </head>
 <body>
-    <h1>Game title</h1>
+    <h1>Neon Melbourne: Underworld Pulse</h1>
     <div id="Sidenav">
         <ul>
             <li><a href="gameweb.html">Homepage>></a></li>
-            <li><a href="intro">Game introduction</a></li>
+            <li><a href="#introduction">Game introduction</a></li>
             <li><a href="map">Explore the city!</a></li>
+            <li><a href="monster">Enemies</a></li>
         <!--game content-->
         </ul>
     </div>
@@ -22,7 +23,7 @@
     </div>
     <br>
     <div class="changeworld">
-      <button onclick="changeImage()"><img src="lib.PNG" id="myImg" alt="state library real world"></button>
+      <img src="lib.PNG" id="myImg" alt="state library real world">
         <script>
           function changeImage(){
           document.getElementById("myImg").src="visionlib.PNG";
@@ -32,6 +33,8 @@
           document.getElementById("myImg").src="lib.PNG";
           }
           </script>
+          <button id="changeIm" onclick="changeImage()">
+            Cyberoptics vision</button>
     </div>
 
 
@@ -59,9 +62,18 @@
       <img src="char1.png" alt="character 1" width="40%">
   </div>
   <div id="introduction">
-      <p>Capybara is an erjvbuireb game cyberpunk themed where the main chaieri plot</p>
+      <h2>why buying</h2>
+      <p>Are you tired of your mom telling you to go outside and not just sit around at home?</p>
+        <p>Welcome to a game that turns that nagging into an adventure! In this game, your real-world 
+          movements blend with virtual challenges as you race against time to find the cure and conquer 
+          your campus. Step outside, explore, and let the thrill of the chase transform your surroundings
+           into an epic battleground.</p>
   </div>
-
+  <div id="introduction">
+    <p>In a dystopian future, Melbourne is trapped in a decaying virtual reality known as the "Dark Grid". The city’s University of Melbourne campus, once a beacon of knowledge, now lies in ruins, where the boundaries between the physical and digital worlds have blurred. The boundaries between the physical world and the Dark Grid—a twisted virtual reality—have blurred, creating a chaotic realm where nothing is as it seems. A digital virus, unleashed by the Sovereign, threatens to erase all existence. But hidden deep within the heart of chaos, Melbourne city, is the key to survival: the Source Code, an enigmatic piece of software capable of rebooting the system and restoring the balance between the two worlds.
+      Time is running out, and the risks couldn’t be higher. As players navigate around the underground levels of Melbourne’s hectic infrastructure, they must confront the terrifying reality that each decision, each step, could be their last.
+      </p>
+  </div>
   </section>
   <footer>
     <p>Group members</p>
